@@ -1,5 +1,10 @@
 <?php
 
+	/**
+	 * @author Kenson Goo, founder of Sidepon.com
+	 * http://www.sidepon.com
+	 */
+
 	class Zillow_Api {
 
 		private $zws_id;
