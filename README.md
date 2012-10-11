@@ -1,7 +1,7 @@
 #Zillow API PHP Library
 
 
-This PHP library is to ease the use of Zillow API. As of today (October 10, 2012), this API supports all API functions of Zillow including
+This PHP library is to ease the use of Zillow API. As of today (October 10, 2012), this API supports all API functions of Zillow, including
 * GetSearchResults
 * GetZestimate
 * GetChart
@@ -17,14 +17,14 @@ This PHP library is to ease the use of Zillow API. As of today (October 10, 2012
 
 ## How to use
 
-Your must have your Zillow API key before you could use this library.
+You must have your Zillow API key to use this library. You could get one at Zillow.com easily.
 
 $zillow_api = new Zillow_Api($zws_id); // $zws_id is your Zillow API Key  
 $search_result = $zillow_api->GetSearchResults(array('address' => '7356 CARTER AVE', 'citystatezip' => 
 'NEWARK'));  
 
 
-Because the library autosave the "zpid" in the object if the function returns one. You could do something like this.
+Because the library autosaves the "zpid" in the object if the function returns one. You could do something like this on one same property without have to worry about the zpid.
 
 $property = $zillow_api->GetSearchResults(array('address' => '7356 CARTER AVE', 'citystatezip' => 'NEWARK'));  
 $estimate = $zillow_api->GetZestimate();  
